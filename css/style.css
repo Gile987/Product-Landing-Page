@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1;
+  background-color: #F9F940;
+  color: #F50CA0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  display: flex;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #43DDE2;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  float: left;
+  display: block;
+  color: #F50CA0;
+  padding: 1rem;
+}
+
+.nav-link:hover {
+  color: #F9F940;
+}
+
+.logo {
+  padding: 0.4rem;
+  width: 200px;
+}
+
+#container {
+  max-width: 920px;
+  margin: 90px auto;
+  overflow: hidden;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin-top: 3rem;
+}
+
+#about .about-text {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+#about .about-text i {
+  color: #F50CA0;;
+}
+
+#about .about-text .about-text__holder {
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  margin-left: 1.4rem;
+  background-color: rgb(247, 214, 208, 0.3);
+  width: 90%;
+}
+
+#about .about-text .about-text__holder h2 {
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+}
+
+#video-holder {
+  padding: 3rem;
+  margin: auto;
+  text-align: center;
+}
+
+#video {
+  width: 640px;
+  height: 480px;
+}
+
+#email {
+  width: 25%;
+}
+
+#submit {
+  width: 18%;
+}
+
+.product {
+  border: solid #F50CA0 3px;
+  border-radius: 2px;
+  text-align: center;
+  width: 32%;
+  height: 110px;
+  padding-bottom: 25%;
+  margin-bottom: 2%;
+  position: relative;
+  background-color: #EAC5B0;
+}
+
+.product h4 {
+  padding: 15px 0;
+}
+
+.product h3 {
+  background-color: #F50CA0;
+  color: #fff;
+  font-size: 1.05rem;
+  padding: 1rem;
+}
+
+.product h2 {
+  padding: 1rem;
+  color: #fff;
+  font-weight: 900;
+}
+
+.product p {
+  padding: 0 4rem 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.4rem 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #F50CA0;
+}
+
+.btn:hover {
+  background-color: #F9F940;
+  color: #000;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.2rem;
+  padding-bottom: 2rem;
+}
+
+.call-to-action {
+  margin: 1.5rem;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.call-to-action h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.call-to-action input {
+  display: block;
+  margin: auto;
+  width: 30%;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  #nav-bar {
+    z-index: 5;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+
+  .product {
+    box-sizing: content-box;
+  }
+}
