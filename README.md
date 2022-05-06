@@ -1,6 +1,6 @@
 # Product-Landing-Page
 
-FreeCodeAcademy Responsive Web Design Project #1
+FreeCodeAcademy Responsive Web Design Project #3
 
 - Create a simple Landing Page that passes all of the FreeCodeAcademy tests.
 
